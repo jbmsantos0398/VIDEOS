@@ -14,4 +14,17 @@ video {
   max-width: 100%;
   height: auto;
 }
-</style></head><body></center></body></html>
+</style></head><body></center></body></html><b id='piscando' style="transition-duration:0.5s">
+<font color="#fffb00"><marquee>Aguarde o vídeo carregar.<br></marquee></font>
+</b><script>
+var teste = 0;
+ setInterval(piscar, 500);
+ function piscar(){
+if(teste<1){
+teste++;
+document.getElementById('piscando').style.opacity = '1';
+} else{
+teste = 0; 
+document.getElementById('piscando').style.opacity = '0';
+}};
+</script>
